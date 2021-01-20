@@ -1,4 +1,3 @@
-import subprocess
 from pathlib import Path
 import getpass as gp
 
@@ -37,6 +36,6 @@ def AskCredentials():
     return keyPass, accessPass
 
 if __name__ == "__main__":
-    createdCheck = CheckDirectories()
+    CheckDirectories()
     keyPass, accessPass = AskCredentials()
     CreateCredentials(keyPass, accessPass)
