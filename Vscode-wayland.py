@@ -1,6 +1,5 @@
 # Native libraries
 import os
-from os.path import expanduser
 
 # General variables
 codePath = ".local/share/applications"
@@ -15,7 +14,7 @@ print("-------\nStarting script - Wayland in vscode\n -------")
 
 if codePath.startswith(".local"):
     print("Codepath in home")
-    homeUser = expanduser("~")
+    homeUser = os.path.expanduser("~")
     print("-------")
 
 print(f"Path used: {homeUser}/{codePath}\n -------")
