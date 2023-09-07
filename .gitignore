@@ -1,5 +1,9 @@
 # Excluded folders
 /Music/input
+/Music/LocalMusic
+
+# Excluded files
+test.csv
 
 # Excluded venv
-/Music/.music.venv
+.venv
