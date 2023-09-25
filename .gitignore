@@ -4,6 +4,7 @@
 
 # Excluded files
 test.csv
+Music/Scriptcraft-music_logs.csv
 
 # Excluded venv
 .venv
