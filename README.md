@@ -1,5 +1,6 @@
-
-# SCRIPTCRAFT
+<br><kbd>
+<br><img src="https://raw.githubusercontent.com/Alexvidalcor/Scriptcraft/master/input/Readme-logo2.png" width="500" />
+</kbd><br>
 
 **CURRENT STATUS: UNSTABLE**
 
@@ -34,6 +35,9 @@ This repository includes scripts and resources for the following areas:
 5. **VSCode Configurations** - Scripts to configure vscode in a certain way, such as to enable starting in Wayland.
 
 Each subfolder has its own README with specific usage instructions. Be sure to read and follow the guidance provided in each section.
+
+| :zap:        All use of cloud (AWS and Azure) generate costs, use it at your own risk!   |
+|-----------------------------------------|
 
 <br>
 
