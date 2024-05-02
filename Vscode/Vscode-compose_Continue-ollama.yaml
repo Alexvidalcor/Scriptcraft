@@ -1,0 +1,54 @@
+services:
+  Vscode-cont_Continue-gpt:
+    image: ollama/ollama
+    container_name: Vscode-cont_Continue-gpt
+    healthcheck:
+      test: ollama --version || exit 1
+      interval: 10s
+    devices:
+      - "/dev/dri:/dev/dri"
+    networks:
+      Vscode-net_Continue-ollama:
+        ipv4_address: 172.XX.0.X
+    ports:
+      - "1143X:11434"
+
+  Vscode-cont_Continue-autocomplete:
+    image: ollama/ollama
+    container_name: Vscode-cont_Continue-autocomplete
+    healthcheck:
+      test: ollama --version || exit 1
+      interval: 10s
+    devices:
+      - "/dev/dri:/dev/dri"
+    networks:
+      Vscode-net_Continue-ollama:
+        ipv4_address: 172.XX.0.X
+    ports:
+      - "1143X:11434" 
+
+  Vscode-cont_Continue-embeddings:
+    image: ollama/ollama
+    container_name: Vscode-cont_Continue-embeddings
+    healthcheck:
+      test: ollama --version || exit 1
+      interval: 10s
+    devices:
+      - "/dev/dri:/dev/dri"
+    networks:
+      Vscode-net_Continue-ollama:
+        ipv4_address: 172.XX.0.X
+    ports:
+      - "1143X:11434"
+
+networks:
+  Vscode-net_Continue-ollama:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.XX.0.0/16
+
+
+# Remove everything (nginx volume included. see '-v')
+# docker-compose -f Vscode-compose_Continue-ollama.yaml -p Vscode-compose_Continue-ollama down -v
