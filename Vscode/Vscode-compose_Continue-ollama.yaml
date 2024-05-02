@@ -9,9 +9,9 @@ services:
       - "/dev/dri:/dev/dri"
     networks:
       Vscode-net_Continue-ollama:
-        ipv4_address: 172.XX.0.X
+        ipv4_address: 172.20.0.5
     ports:
-      - "1143X:11434"
+      - "11434"
 
   Vscode-cont_Continue-autocomplete:
     image: ollama/ollama
@@ -23,9 +23,9 @@ services:
       - "/dev/dri:/dev/dri"
     networks:
       Vscode-net_Continue-ollama:
-        ipv4_address: 172.XX.0.X
+        ipv4_address: 172.20.0.6
     ports:
-      - "1143X:11434" 
+      - "11434" 
 
   Vscode-cont_Continue-embeddings:
     image: ollama/ollama
@@ -37,17 +37,16 @@ services:
       - "/dev/dri:/dev/dri"
     networks:
       Vscode-net_Continue-ollama:
-        ipv4_address: 172.XX.0.X
+        ipv4_address: 172.20.0.7
     ports:
-      - "1143X:11434"
+      - "11434"
 
 networks:
   Vscode-net_Continue-ollama:
     driver: bridge
     ipam:
-      driver: default
       config:
-        - subnet: 172.XX.0.0/16
+        - subnet: 172.20.0.0/16
 
 
 # Remove everything (nginx volume included. see '-v')
