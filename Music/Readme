@@ -4,7 +4,7 @@ This Python script allows you to automatically add metadata to your music files 
 
 ## Requirements
 
-Make sure you have Python installed on your system. The script utilizes the [Mutagen](https://mutagen.readthedocs.io/) library to work with music files, so you'll need to have it installed as well. You can install Mutagen using pip:
+Make sure you have Python installed on your system. The script uses the [Mutagen](https://mutagen.readthedocs.io/) library to work with music files, so you'll need to have it installed as well. You can install Mutagen using pip:
 
 ```bash
 pip install mutagen
