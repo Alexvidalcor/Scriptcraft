@@ -37,15 +37,8 @@ The provided Bash script (`compose-ollama.sh`) performs the following tasks:
 
 3. Execute the script:
    ```bash
-    ./compose-ollama.sh
+   ./compose-ollama.sh
    ```
-
-### Output
-Upon successful execution, the script will produce the following output:
-
-    ```bash
-    All services started and commands executed successfully.
-    ```
 
 
 ## Disclaimer
