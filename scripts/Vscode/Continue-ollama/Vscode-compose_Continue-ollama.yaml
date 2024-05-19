@@ -6,12 +6,12 @@ services:
       test: ollama --version || exit 1
       interval: 10s
     devices:
-      - "/dev/dri:/dev/dri"
+      - /dev/dri:/dev/dri
     networks:
       Vscode-net_Continue-ollama:
         ipv4_address: 172.20.0.5
     ports:
-      - "11434"
+      - '11434'
 
   Vscode-cont_Continue-autocomplete:
     image: ollama/ollama
@@ -20,12 +20,12 @@ services:
       test: ollama --version || exit 1
       interval: 10s
     devices:
-      - "/dev/dri:/dev/dri"
+      - /dev/dri:/dev/dri
     networks:
       Vscode-net_Continue-ollama:
         ipv4_address: 172.20.0.6
     ports:
-      - "11434" 
+      - '11434'
 
   Vscode-cont_Continue-embeddings:
     image: ollama/ollama
@@ -34,12 +34,12 @@ services:
       test: ollama --version || exit 1
       interval: 10s
     devices:
-      - "/dev/dri:/dev/dri"
+      - /dev/dri:/dev/dri
     networks:
       Vscode-net_Continue-ollama:
         ipv4_address: 172.20.0.7
     ports:
-      - "11434"
+      - '11434'
 
 networks:
   Vscode-net_Continue-ollama:
@@ -47,7 +47,6 @@ networks:
     ipam:
       config:
         - subnet: 172.20.0.0/16
-
 
 # Remove everything (nginx volume included. see '-v')
 # docker-compose -f Vscode-compose_Continue-ollama.yaml -p Vscode-compose_Continue-ollama down -v
