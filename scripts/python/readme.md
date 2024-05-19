@@ -1,4 +1,4 @@
-# EnvCreate.py
+# Python environment creator
 
 This script automates the creation of a Python virtual environment on Linux systems (Fedora or Ubuntu). It performs the following steps:
 1. Checks the operating system.
@@ -11,7 +11,7 @@ This script automates the creation of a Python virtual environment on Linux syst
 
 1. Run the script:
     ```bash
-    ./EnvCreate.py
+    ./creation-env.py
     ```
 
 2. Follow the prompts to enter the environment name and root password.

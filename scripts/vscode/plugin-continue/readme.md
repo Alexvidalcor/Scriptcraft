@@ -4,7 +4,7 @@ This repository contains a Bash script to set up and manage Docker services for 
 
 ## Script Description
 
-The provided Bash script (`Vscode-compose_Continue-ollamastart.sh`) performs the following tasks:
+The provided Bash script (`compose-ollama.sh`) performs the following tasks:
 
 ### Start Docker Services
 
@@ -30,14 +30,14 @@ The provided Bash script (`Vscode-compose_Continue-ollamastart.sh`) performs the
 ### Steps to Run the Script
 
 1. Clone the repository and navigate to the directory containing the script.
-2. Ensure `Vscode-compose_Continue-ollamastart.sh` has execute permissions. If not, make it executable:
+2. Ensure `compose-ollama.sh` has execute permissions. If not, make it executable:
    ```bash
-   chmod +x Vscode-compose_Continue-ollamastart.sh
+   chmod +x compose-ollama.sh
    ```
 
 3. Execute the script:
    ```bash
-    ./Vscode-compose_Continue-ollamastart.sh
+    ./compose-ollama.sh
    ```
 
 ### Output

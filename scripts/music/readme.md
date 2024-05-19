@@ -30,7 +30,7 @@ pip install pandas
 
 2. **Run the script.**
     ```bash
-    python Script-music_metadata.py
+    python metadata-changer.py
     ```
 
 # Output
@@ -48,7 +48,7 @@ The script generates a CSV file `Scriptcraft-music_logs.csv` in the specified Mu
 
 These columns log the details of processing each file.
 
-The detailed analysis of the result can be found in the Jupyter Notebook file named: **Script-music_analysis.ipynb**
+The detailed analysis of the result can be found in the Jupyter Notebook file named: **analysis-results.ipynb**
 
 ## Disclaimer
 

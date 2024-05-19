@@ -1,4 +1,4 @@
-# ConfigAWS.py
+# Config-AWS
 
 This Python script automates the process of setting up AWS credentials and verifying their validity. The script performs the following functions:
 
@@ -12,7 +12,7 @@ This Python script automates the process of setting up AWS credentials and verif
 **Run the Script**:
    
    ```sh
-   python ConfigAWS.py
+   python config-aws.py
    ```
 
 # Obsolete
